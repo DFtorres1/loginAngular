@@ -1,7 +1,4 @@
 import {User} from "../models/user.model";
-/**
- * Created by xavi on 5/16/17.
- */
 
 export const USERS: User[] = [
   {id: 1, name: 'Javier', surname: 'Castillo', email: 'jcast@somewhere.com', username: 'jcastillo', password: 'abcd'},
