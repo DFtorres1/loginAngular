@@ -35,7 +35,8 @@ export class LoginComponent implements OnInit {
     this.error = null;
     if(this.loginForm.valid){
       this.authenticationService.login(new LoginObject(this.loginForm.value)).subscribe(
-        data => this.correctLogin(data),
+        data => {console.log("asd"); 
+          this.correctLogin(data)},
         error => {
           this.error = error;
         }

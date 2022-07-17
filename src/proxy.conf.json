@@ -1,0 +1,7 @@
+{
+    "/test/*": {
+        "target": "https://07cb-200-91-236-43.ngrok.io/eClick-web",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}
