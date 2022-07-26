@@ -1,0 +1,12 @@
+/* ESTILOS DE TABLA */
+
+table {
+  width: 100%;
+}
+
+.tableDiv {
+  margin: 10px;
+  margin-top: 70px;
+  margin-bottom: 5.rem;
+  padding: 10px;
+}

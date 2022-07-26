@@ -1,2 +1,28 @@
-<h1>Hi {{user.nombre}}</h1>
-<button mat-raised-button type="button" (click)="logout()">Log Out</button>
+<link rel="stylesheet" [href]="sanitizer.bypassSecurityTrustResourceUrl(cssUrl)">
+<div>
+    <nav class="navBar" #stickyMenu [class.sticky]="sticky">
+
+        <img class="logo" src="https://via.placeholder.com/120x60" height="60px" width="120px">
+
+        <div class="tableButtons">
+            <button mat-raised-button type="button" (click)="showTable1()">Factores</button>
+            <button mat-raised-button type="button" (click)="showTable2()">Placeholder elements</button>
+
+        </div>
+
+        <div class="LogOutButton">
+                <button mat-raised-button type="button" (click)="logout()">Log Out</button>
+
+        </div>
+
+    </nav>
+
+    <mat-card-content *ngIf="table1 == true">
+        <table-basic></table-basic>
+    </mat-card-content>
+
+    <mat-card-content *ngIf="table2 == true">
+        <table-basic2></table-basic2>
+    </mat-card-content>
+
+</div>

@@ -1,26 +1,25 @@
-import {Injectable} from "@angular/core";
-import {Observable} from "rxjs";
-import {LoginObject} from "./login-object.model";
-import {Session} from "../../core/models/session.model";
-import {HttpClient, HttpHeaders} from "@angular/common/http";
+import { Injectable } from "@angular/core";
+import { Observable } from "rxjs";
+import { LoginObject } from "./login-object.model";
+import { Session } from "../../core/models/session.model";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
+
 /**
- * Created by xavi on 5/16/17.
+ * 
+ *      SERVICIO QUE CONECTA CON EL API PARA LA OBTENCION DE LA SESION
+ * 
  */
-@Injectable({providedIn: 'root'})
+
+@Injectable({ providedIn: 'root' })
 export class AuthenticationService {
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
-  private basePath = 'https://4454-200-91-236-43.ngrok.io/eClick-web/test/loginAngularAPI/';
+  private basePath = 'http://localhost:8080/eClick-web/test/loginAngularAPI/';
 
   login(loginObj: LoginObject): Observable<Session> {
     console.log(loginObj);
-    return this.http.post<Session>(this.basePath + 'authenticate', loginObj,{
-      headers: new HttpHeaders({
-        'Content-Type': 'application/json',
-        'dataType': 'jsonp'
-      })
-    });
+    return this.http.post<Session>(this.basePath + 'authenticate', loginObj);
   }
 
   logout(): Observable<Boolean> {

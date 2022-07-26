@@ -1,0 +1,36 @@
+/* ESTILOS DEl HOME */
+
+.navBar {
+    background-color: rgb(184, 200, 206);
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    border: 0px;
+    margin-left: 20px;
+}
+
+
+button {
+    margin: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.logOutButton {
+    margin-left: 40px;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-between;
+    right: 0px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 10;
+    width: 100%;
+}

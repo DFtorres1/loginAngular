@@ -1,6 +1,3 @@
-/**
- * Created by xavi on 5/16/17.
- */
 import {Component, OnInit} from "@angular/core";
 import {Validators, FormGroup, FormBuilder} from "@angular/forms";
 import {LoginObject} from "./shared/login-object.model";
@@ -33,6 +30,7 @@ export class LoginComponent implements OnInit {
   public submitLogin(): void {
     this.submitted = true;
     this.error = null;
+    
     if(this.loginForm.valid){
       this.authenticationService.login(new LoginObject(this.loginForm.value)).subscribe(
         data => {console.log("asd"); 
