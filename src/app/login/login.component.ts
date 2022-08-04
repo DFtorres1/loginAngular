@@ -7,7 +7,8 @@ import {Router} from "@angular/router";
 import {Session} from "../core/models/session.model";
 @Component({
   selector: 'login',
-  templateUrl: 'login.component.html'
+  templateUrl: 'login.component.html',
+  styleUrls: ['./assets/login.component.css']
 })
 
 export class LoginComponent implements OnInit {

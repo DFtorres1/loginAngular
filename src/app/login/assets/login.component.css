@@ -1,0 +1,51 @@
+input {
+    color:#e0e6eb;
+}
+
+mat-hint {
+  color: red;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+::placeholder {
+  color: rgb(161, 238, 238);
+}
+
+.aligner {
+  background-color: #1c4c74;
+  display: flex;
+  justify-content: center;
+}
+
+.eclickIMG {
+    align-self: flex-start;
+    margin-top: 15px;
+    justify-self: self-start;
+}
+
+.loginFields {
+  color: #e0e6eb;
+}
+
+.mainBox {
+  background-color: #3494d4;
+  color: #e0e6eb;
+  justify-self: center;
+}
+
+.signInButton {
+  text-align: right;
+}
+
+.signInButtonB {
+  background-color: #3cacf4;
+  color: #e3e9ee;
+}
+
+.usernameField {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
