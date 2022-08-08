@@ -8,7 +8,7 @@ import { DomSanitizer } from "@angular/platform-browser";
 @Component({
   selector: 'home',
   templateUrl: 'home.component.html',
-  styleUrls: ['/assets/home.component.css']
+  styleUrls: ["./assets/home.component.css"]
 })
 
 export class HomeComponent implements OnInit {

@@ -1,8 +1,7 @@
 <link rel="stylesheet" [href]="sanitizer.bypassSecurityTrustResourceUrl(cssUrl)">
-<div>
+<div class="mainContainer">
     <nav class="navBar" #stickyMenu [class.sticky]="sticky">
-
-        <img class="logo" src="https://via.placeholder.com/120x60" height="60px" width="120px">
+        <img class="logo" src="https://eclick.com.co/eClick-web/resources/images/eClick_logo_v1_peq.png" height="50px" width="120px">
 
         <div class="tableButtons">
             <button mat-raised-button type="button" (click)="showTable1()">Factores</button>
@@ -14,7 +13,6 @@
                 <button mat-raised-button type="button" (click)="logout()">Log Out</button>
 
         </div>
-
     </nav>
 
     <mat-card-content *ngIf="table1 == true">

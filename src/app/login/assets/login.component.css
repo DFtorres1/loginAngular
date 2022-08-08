@@ -1,9 +1,5 @@
 input {
-    color:#e0e6eb;
-}
-
-mat-hint {
-  color: red;
+  color: #e0e6eb;
 }
 
 mat-form-field {
@@ -16,14 +12,11 @@ mat-form-field {
 
 .aligner {
   background-color: #1c4c74;
-  display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .eclickIMG {
-    align-self: flex-start;
-    margin-top: 15px;
-    justify-self: self-start;
+  margin-top: 15px;
 }
 
 .loginFields {
@@ -33,7 +26,6 @@ mat-form-field {
 .mainBox {
   background-color: #3494d4;
   color: #e0e6eb;
-  justify-self: center;
 }
 
 .signInButton {
