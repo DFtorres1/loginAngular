@@ -6,10 +6,6 @@ mat-form-field {
   width: 100%;
 }
 
-::placeholder {
-  color: rgb(161, 238, 238);
-}
-
 .aligner {
   background-color: #1c4c74;
   flex-direction: column;
@@ -17,10 +13,6 @@ mat-form-field {
 
 .eclickIMG {
   margin-top: 15px;
-}
-
-.loginFields {
-  color: #e0e6eb;
 }
 
 .mainBox {
