@@ -7,8 +7,11 @@
     </mat-card-title>
 
     <mat-card-content>
-      <form id="login-form" #lForm="ngForm" [formGroup]="loginForm" (ngSubmit)="submitLogin()" novalidate>
+      <form class="formFields" id="login-form" #lForm="ngForm" [formGroup]="loginForm" (ngSubmit)="submitLogin()" novalidate>
         
+        <mat-hint *ngIf="submitted && loginForm.valid">Validando</mat-hint>
+        <mat-hint class="userPassNF" *ngIf="submitError && loginForm.valid">Usuario o contraseña no encontrados</mat-hint>
+
         <mat-form-field class="usernameField" [ngClass]="{'mat-input-invalid': submitted && error?.code == 1}" >
           <input matInput type="text" formControlName="username" placeholder="Usuario"/>
           <mat-hint *ngIf="submitted && error?.code == 1 && !loginForm.controls.username.hasError('required')">{{error.message}}</mat-hint>

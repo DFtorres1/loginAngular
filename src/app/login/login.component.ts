@@ -14,6 +14,7 @@ import {Session} from "../core/models/session.model";
 export class LoginComponent implements OnInit {
   public loginForm: FormGroup;
   public submitted: Boolean = false;
+  public submitError: Boolean = false;
   public error: {code: number, message: string} = null;
 
   constructor(private formBuilder: FormBuilder,
@@ -30,6 +31,7 @@ export class LoginComponent implements OnInit {
 
   public submitLogin(): void {
     this.submitted = true;
+    this.submitError = false;
     this.error = null;
     
     if(this.loginForm.valid){
@@ -37,6 +39,8 @@ export class LoginComponent implements OnInit {
         data => {console.log("asd"); 
           this.correctLogin(data)},
         error => {
+          this.submitted = false,
+          this.submitError = true,
           this.error = error;
         }
       )

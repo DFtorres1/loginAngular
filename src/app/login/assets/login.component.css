@@ -6,6 +6,10 @@ mat-form-field {
   width: 100%;
 }
 
+mat-hint {
+  color: #e0e6eb;
+}
+
 .aligner {
   background-color: #1c4c74;
   flex-direction: column;
@@ -13,6 +17,13 @@ mat-form-field {
 
 .eclickIMG {
   margin-top: 15px;
+}
+
+.formFields {
+  color: #e0e6eb;
+  flex-direction: column;
+  width: 360px;
+  height: 134px;
 }
 
 .mainBox {
@@ -32,4 +43,8 @@ mat-form-field {
 .usernameField {
   margin-bottom: 10px;
   margin-top: 10px;
+}
+
+.userPassNF {
+  color: #5c23e2;
 }
